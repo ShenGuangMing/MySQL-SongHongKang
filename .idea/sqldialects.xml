@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/basic/第03章_基础的SELECT语句/03SQL.SQL" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/basic/第03章_基础的SELECT语句/InputSQL.sql" dialect="CassandraQL" />
+  </component>
+</project>
