@@ -12,7 +12,7 @@
 show databases;
 ```
 
-![image-20230712184325684](E:\WorkSpace\MySQL\SGG\SongHongKang\basic\第02章_MySQL环境搭建\assets\image-20230712184325684.png)
+![image-20230712184325684](assets\image-20230712184325684.png)
 
 > “**information_schema**”是 MySQL 系统自带的数据库，主要==保存 MySQL 数据库服务器的系统信息==， 比如数据库的名称、数据表的名称、字段名称、存取权限、数据文件 所在的文件夹和系统使用的 文件夹，等等
 >
@@ -97,7 +97,7 @@ insert into student values(2,'李四');
 
 会出现如下错误：
 
-![image-20230712220209328](E:\WorkSpace\MySQL\SGG\SongHongKang\basic\第02章_MySQL环境搭建\assets\image-20230712220209328.png)
+![image-20230712220209328](assets\image-20230712220209328.png)
 
 报错原因是字符集有问题
 
@@ -107,7 +107,7 @@ insert into student values(2,'李四');
 show create table <表名称>\G
 ```
 
-![image-20230712220644618](E:\WorkSpace\MySQL\SGG\SongHongKang\basic\第02章_MySQL环境搭建\assets\image-20230712220644618.png)
+![image-20230712220644618](assets\image-20230712220644618.png)
 
 上面的结果显示student的表格的默认字符集是“latin1”不支持中文。
 
@@ -118,7 +118,7 @@ show create table <表名称>\G
 show create database <数据库名>;
 ```
 
-![image-20230712221442721](E:\WorkSpace\MySQL\SGG\SongHongKang\basic\第02章_MySQL环境搭建\assets\image-20230712221442721.png)
+![image-20230712221442721](assets\image-20230712221442721.png)
 
 上面的结果显示atguigudb数据库也不支持中文，==字符集默认是latin1==。
 
@@ -226,7 +226,7 @@ mysql> show variables like 'collation_%';
 
 ## 6.1 主要目录结构
 
-![image-20230712224045672](E:\WorkSpace\MySQL\SGG\SongHongKang\basic\第02章_MySQL环境搭建\assets\image-20230712224045672.png)
+![image-20230712224045672](assets\image-20230712224045672.png)
 
 ## 6.2 MySQL 源代码获取
 
@@ -238,7 +238,7 @@ MySQL 是用 C++ 开发而成的，我简单介绍一下源代码的组成。
 
 mysql-8.0.22 目录下的各个子目录，包含了 MySQL 各部分组件的源代码：
 
-![image-20230712224209914](E:\WorkSpace\MySQL\SGG\SongHongKang\basic\第02章_MySQL环境搭建\assets\image-20230712224209914.png)
+![image-20230712224209914](assets\image-20230712224209914.png)
 
 - sql 子目录是 MySQL 核心代码；
 

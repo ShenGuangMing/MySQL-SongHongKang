@@ -13,13 +13,13 @@
   - SQL 有两个重要的标准，分别是 SQL92 和 SQL99，它们分别代表了 92 年和 99 年颁布的 SQL 标 准，我们今天使用的 SQL 语言依然遵循这些标准。
 - 不同的数据库生产厂商都支持SQL语句，但都有特有内容。
 
-![image-20230713142816031](E:\WorkSpace\MySQL\SGG\SongHongKang\basic\第03章_基础的SELECT语句\assets\image-20230713142816031.png)
+![image-20230713142816031](assets\image-20230713142816031.png)
 
 ## 1.2 SQL语言排行榜
 
 自从 SQL 加入了 TIOBE 编程语言排行榜，就一直保持在 Top 10。
 
-![image-20230713142849727](E:\WorkSpace\MySQL\SGG\SongHongKang\basic\第03章_基础的SELECT语句\assets\image-20230713142849727.png)
+![image-20230713142849727](assets\image-20230713142849727.png)
 
 ## 1.3 SQL 分类
 
@@ -149,7 +149,7 @@ SELECT 9/2； # 没有任何字句
   FROM   department;
   ```
 
-  ![image-20230713160849390](E:\WorkSpace\MySQL\SGG\SongHongKang\basic\第03章_基础的SELECT语句\assets\image-20230713160849390.png)
+  ![image-20230713160849390](assets\image-20230713160849390.png)
 
   > 一般情况下，除非需要使用表中所有的字段数据，最好不要使用通配符‘*’。使用通配符虽然可以节 省输入查询语句的时间，但是获取不需要的列数据通常会降低查询和所使用的应用程序的效率。通 配符的优势是，当不知道所需要的列的名称时，可以通过它获取它们。
   >
@@ -162,7 +162,7 @@ SELECT 9/2； # 没有任何字句
   FROM departments;
   ```
 
-  ![image-20230713161942955](E:\WorkSpace\MySQL\SGG\SongHongKang\basic\第03章_基础的SELECT语句\assets\image-20230713161942955.png)
+  ![image-20230713161942955](assets\image-20230713161942955.png)
 
   > MySQL中的SQL语句是不区分大小写的，因此SELECT和select的作用是相同的，但是，许多开发人 员习惯将关键字大写、数据列和表名小写，读者也应该养成一个良好的编程习惯，这样写出来的代 码更容易阅读和维护。
 
@@ -185,14 +185,14 @@ SELECT 9/2； # 没有任何字句
   FROM employees;
   ```
 
-  ![image-20230713162359109](E:\WorkSpace\MySQL\SGG\SongHongKang\basic\第03章_基础的SELECT语句\assets\image-20230713162359109.png)
+  ![image-20230713162359109](assets\image-20230713162359109.png)
 
   ```sql
   SELECT last_name "Name", salary*12 "Annual Salary"
   FROM employees;
   ```
 
-  ![image-20230713162454432](E:\WorkSpace\MySQL\SGG\SongHongKang\basic\第03章_基础的SELECT语句\assets\image-20230713162454432-1689236695520-1.png)
+  ![image-20230713162454432](assets\image-20230713162454432-1689236695520-1.png)
 
 ## 3.3 去除重复行
 
@@ -203,7 +203,7 @@ SELECT department_id
 FROM employees;
 ```
 
-![image-20230713162555085](E:\WorkSpace\MySQL\SGG\SongHongKang\basic\第03章_基础的SELECT语句\assets\image-20230713162555085.png)
+![image-20230713162555085](assets\image-20230713162555085.png)
 
 <font color=#B00>在SELECT语句中使用关键字DISTINCT去除重复行</font>
 
@@ -212,7 +212,7 @@ SELECT DISTINCT department_id
 FROM employees;
 ```
 
-![image-20230713162709289](E:\WorkSpace\MySQL\SGG\SongHongKang\basic\第03章_基础的SELECT语句\assets\image-20230713162709289.png)
+![image-20230713162709289](assets\image-20230713162709289.png)
 
 
 
@@ -232,7 +232,7 @@ SELECT employee_id,salary,commission_pct,
 FROM employees;
 ```
 
-![image-20230713162931510](E:\WorkSpace\MySQL\SGG\SongHongKang\basic\第03章_基础的SELECT语句\assets\image-20230713162931510.png)
+![image-20230713162931510](assets\image-20230713162931510.png)
 
 > 这里你一定要注意，在 MySQL 里面， 空值不等于空字符串。一个空字符串的长度是 0，而一个空值的长 度是空。而且，在 MySQL 里面，空值是占用空间的。
 
@@ -286,7 +286,7 @@ DESCRIBE employees; # 两个都可以
 DESC employees;
 ```
 
-![image-20230713163430933](E:\WorkSpace\MySQL\SGG\SongHongKang\basic\第03章_基础的SELECT语句\assets\image-20230713163430933.png)
+![image-20230713163430933](assets\image-20230713163430933.png)
 
 其中，各个字段的含义分别解释如下：
 
@@ -303,7 +303,7 @@ DESC employees;
 
 - 背景：
 
-![image-20230713163628708](E:\WorkSpace\MySQL\SGG\SongHongKang\basic\第03章_基础的SELECT语句\assets\image-20230713163628708.png)
+![image-20230713163628708](assets\image-20230713163628708.png)
 
 - 语法：
 
@@ -324,4 +324,4 @@ FROM employees
 WHERE department_id = 90 ;
 ```
 
-![image-20230713163803471](E:\WorkSpace\MySQL\SGG\SongHongKang\basic\第03章_基础的SELECT语句\assets\image-20230713163803471.png)
+![image-20230713163803471](assets\image-20230713163803471.png)
